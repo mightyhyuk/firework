@@ -1,4 +1,5 @@
-const baseUrl = "https://api.rawg.io/api";
+const baseUrl =
+  "https://api.rawg.io/api/games?key=ccc1eaeb0239410da73bb130946597eb";
 
 const getCurrentMonth = () => {
   const month = new Date().getMonth() + 1;
@@ -14,5 +15,4 @@ const currentYear = new Date().getFullYear();
 const currentMonth = getCurrentMonth();
 const currentDay = getCurrentDay();
 const currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
-
-console.log(currentDate);
+const lastYearDate = `${currentYear - 1}-${currentMonth}-${currentDay}`;
