@@ -17,6 +17,4 @@ const currentDay = getCurrentDay();
 const currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
 const lastYearDate = `${currentYear - 1}-${currentMonth}-${currentDay}`;
 
-const popularGamesUrl = `${baseUrl}&dates=${lastYearDate},${currentDate}&ordering=-rating&page_size=10`;
-
-console.log(popularGamesUrl);
+export const popularGamesUrl = `${baseUrl}&dates=${lastYearDate},${currentDate}&ordering=-rating&page_size=10`;
